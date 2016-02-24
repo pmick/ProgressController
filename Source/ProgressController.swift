@@ -8,9 +8,11 @@
 
 import Foundation
 
-class ProgressController: UIViewController {
+public class ProgressController: UIViewController {
     lazy var activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .WhiteLarge)
     lazy var progressTransitioningDelegate = ProgressTransitioningDelegate()
+   
+    // MARK: - Lifecycle
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -18,18 +20,13 @@ class ProgressController: UIViewController {
         self.commonInit()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         self.commonInit()
     }
 
-    func commonInit() {
-        self.modalPresentationStyle = .Custom
-        self.transitioningDelegate = self.progressTransitioningDelegate
-    }
-    
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.addSubview(self.activityIndicator)
@@ -38,16 +35,27 @@ class ProgressController: UIViewController {
         self.activityIndicator.startAnimating()
     }
     
-    override func viewDidLayoutSubviews() {
+    override public func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
         self.activityIndicator.sizeToFit()
         self.activityIndicator.center = CGPoint(x: self.view.bounds.width/2, y: self.view.bounds.height/2)
     }
     
-    func dismiss(animated flag: Bool = true, completion: (() -> Void)? = nil) {
-        if let vc = self.presentingViewController {
-            vc.dismissViewControllerAnimated(flag, completion: completion)
+    public override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        // Normally modalPresentationCapturesStatusBarAppearance would be used,
+        // but it doesn't seem to have any affect on custom modal style.
+        if let presenting = self.presentingViewController {
+            return presenting.preferredStatusBarStyle()
         }
+        
+        return .Default
+    }
+    
+    // MARK: - Private
+    
+    private func commonInit() {
+        self.modalPresentationStyle = .Custom
+        self.transitioningDelegate = self.progressTransitioningDelegate
     }
 }

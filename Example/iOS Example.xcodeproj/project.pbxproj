@@ -12,17 +12,47 @@
 		40943B771C7D1BEB00273092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40943B751C7D1BEB00273092 /* Main.storyboard */; };
 		40943B791C7D1BEB00273092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40943B781C7D1BEB00273092 /* Assets.xcassets */; };
 		40943B7C1C7D1BEB00273092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40943B7A1C7D1BEB00273092 /* LaunchScreen.storyboard */; };
+		40943BAB1C7D3D9700273092 /* ProgressController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40943BA81C7D3D7F00273092 /* ProgressController.framework */; };
+		40943BAC1C7D3D9700273092 /* ProgressController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 40943BA81C7D3D7F00273092 /* ProgressController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		40943B831C7D1BEB00273092 /* PBXContainerItemProxy */ = {
+		40943BA71C7D3D7F00273092 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 40943B661C7D1BEB00273092 /* Project object */;
+			containerPortal = 40943BA21C7D3D7F00273092 /* ProgressController.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40943B1F1C7D1B7900273092;
+			remoteInfo = ProgressController;
+		};
+		40943BA91C7D3D7F00273092 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40943BA21C7D3D7F00273092 /* ProgressController.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40943B291C7D1B7900273092;
+			remoteInfo = ProgressControllerTests;
+		};
+		40943BAD1C7D3D9700273092 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40943BA21C7D3D7F00273092 /* ProgressController.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 40943B6D1C7D1BEB00273092;
-			remoteInfo = "iOS Example";
+			remoteGlobalIDString = 40943B1E1C7D1B7900273092;
+			remoteInfo = ProgressController;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		40943BAF1C7D3D9700273092 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				40943BAC1C7D3D9700273092 /* ProgressController.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		40943B6E1C7D1BEB00273092 /* iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,7 +62,7 @@
 		40943B781C7D1BEB00273092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40943B7B1C7D1BEB00273092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40943B7D1C7D1BEB00273092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		40943B821C7D1BEB00273092 /* iOS ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40943BA21C7D3D7F00273092 /* ProgressController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ProgressController.xcodeproj; path = ../ProgressController.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,13 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		40943B7F1C7D1BEB00273092 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				40943BAB1C7D3D9700273092 /* ProgressController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +82,7 @@
 			children = (
 				40943B701C7D1BEB00273092 /* iOS Example */,
 				40943B6F1C7D1BEB00273092 /* Products */,
+				40943BA21C7D3D7F00273092 /* ProgressController.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				40943B6E1C7D1BEB00273092 /* iOS Example.app */,
-				40943B821C7D1BEB00273092 /* iOS ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +107,15 @@
 			path = "iOS Example";
 			sourceTree = "<group>";
 		};
+		40943BA31C7D3D7F00273092 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40943BA81C7D3D7F00273092 /* ProgressController.framework */,
+				40943BAA1C7D3D7F00273092 /* ProgressControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -93,33 +126,17 @@
 				40943B6A1C7D1BEB00273092 /* Sources */,
 				40943B6B1C7D1BEB00273092 /* Frameworks */,
 				40943B6C1C7D1BEB00273092 /* Resources */,
+				40943BAF1C7D3D9700273092 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				40943BAE1C7D3D9700273092 /* PBXTargetDependency */,
 			);
 			name = "iOS Example";
 			productName = "iOS Example";
 			productReference = 40943B6E1C7D1BEB00273092 /* iOS Example.app */;
 			productType = "com.apple.product-type.application";
-		};
-		40943B811C7D1BEB00273092 /* iOS ExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 40943B8E1C7D1BEB00273092 /* Build configuration list for PBXNativeTarget "iOS ExampleTests" */;
-			buildPhases = (
-				40943B7E1C7D1BEB00273092 /* Sources */,
-				40943B7F1C7D1BEB00273092 /* Frameworks */,
-				40943B801C7D1BEB00273092 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				40943B841C7D1BEB00273092 /* PBXTargetDependency */,
-			);
-			name = "iOS ExampleTests";
-			productName = "iOS ExampleTests";
-			productReference = 40943B821C7D1BEB00273092 /* iOS ExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -134,10 +151,6 @@
 					40943B6D1C7D1BEB00273092 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
-					40943B811C7D1BEB00273092 = {
-						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = 40943B6D1C7D1BEB00273092;
-					};
 				};
 			};
 			buildConfigurationList = 40943B691C7D1BEB00273092 /* Build configuration list for PBXProject "iOS Example" */;
@@ -151,13 +164,35 @@
 			mainGroup = 40943B651C7D1BEB00273092;
 			productRefGroup = 40943B6F1C7D1BEB00273092 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 40943BA31C7D3D7F00273092 /* Products */;
+					ProjectRef = 40943BA21C7D3D7F00273092 /* ProgressController.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				40943B6D1C7D1BEB00273092 /* iOS Example */,
-				40943B811C7D1BEB00273092 /* iOS ExampleTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		40943BA81C7D3D7F00273092 /* ProgressController.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ProgressController.framework;
+			remoteRef = 40943BA71C7D3D7F00273092 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40943BAA1C7D3D7F00273092 /* ProgressControllerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ProgressControllerTests.xctest;
+			remoteRef = 40943BA91C7D3D7F00273092 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		40943B6C1C7D1BEB00273092 /* Resources */ = {
@@ -167,13 +202,6 @@
 				40943B7C1C7D1BEB00273092 /* LaunchScreen.storyboard in Resources */,
 				40943B791C7D1BEB00273092 /* Assets.xcassets in Resources */,
 				40943B771C7D1BEB00273092 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		40943B801C7D1BEB00273092 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,20 +217,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		40943B7E1C7D1BEB00273092 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		40943B841C7D1BEB00273092 /* PBXTargetDependency */ = {
+		40943BAE1C7D3D9700273092 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 40943B6D1C7D1BEB00273092 /* iOS Example */;
-			targetProxy = 40943B831C7D1BEB00273092 /* PBXContainerItemProxy */;
+			name = ProgressController;
+			targetProxy = 40943BAD1C7D3D9700273092 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -313,6 +334,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "iOS Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.YayNext.iOS-Example";
@@ -324,34 +346,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "iOS Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.YayNext.iOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		40943B8F1C7D1BEB00273092 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "iOS ExampleTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.YayNext.iOS-ExampleTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS Example.app/iOS Example";
-			};
-			name = Debug;
-		};
-		40943B901C7D1BEB00273092 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "iOS ExampleTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.YayNext.iOS-ExampleTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS Example.app/iOS Example";
 			};
 			name = Release;
 		};
@@ -372,15 +371,6 @@
 			buildConfigurations = (
 				40943B8C1C7D1BEB00273092 /* Debug */,
 				40943B8D1C7D1BEB00273092 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		40943B8E1C7D1BEB00273092 /* Build configuration list for PBXNativeTarget "iOS ExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				40943B8F1C7D1BEB00273092 /* Debug */,
-				40943B901C7D1BEB00273092 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

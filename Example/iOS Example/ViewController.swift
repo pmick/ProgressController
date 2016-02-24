@@ -7,19 +7,24 @@
 //
 
 import UIKit
+import ProgressController
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func showButtonTapped(sender: AnyObject) {
+        let progressController = ProgressController()
+        self.presentViewController(progressController, animated: true, completion: nil)
+        
+        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(2 * Double(NSEC_PER_SEC)))
+        dispatch_after(delayTime, dispatch_get_main_queue()) {
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
+        
     }
-
-
+    
 }
 

@@ -49,19 +49,19 @@ class ProgressPresentationController: UIPresentationController {
     }
 }
 
-extension UIView {
-    class func animateDampenedSpringWithDuration(duration: NSTimeInterval, delay: NSTimeInterval = 0, options: UIViewAnimationOptions = [], animation: () -> Void, completion: ((Bool) -> Void)? = nil) {
+private extension UIView {
+    class func animateDampenedSpringWithDuration(duration: NSTimeInterval, delay: NSTimeInterval = 0, options: UIViewAnimationOptions = [], @autoclosure(escaping) animation: () -> Void, completion: ((Bool) -> Void)? = nil) {
         UIView.animateWithDuration(duration, delay: delay, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: options, animations: animation, completion: completion)
     }
 }
 
 class ProgressAnimationController: NSObject, UIViewControllerAnimatedTransitioning {
     var isPresenting = true
-    private let transitionDuration = 0.2
-    private let hiddenTransform = CGAffineTransformMakeScale(0.001, 0.001)
+    private static let TransitionDuration = 0.2
+    private static let HiddenTransform = CGAffineTransformMakeScale(0.001, 0.001)
     
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
-        return transitionDuration
+        return ProgressAnimationController.TransitionDuration
     }
     
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
@@ -78,14 +78,11 @@ class ProgressAnimationController: NSObject, UIViewControllerAnimatedTransitioni
         }
         
         let a = vc.activityIndicator
-        a.transform = self.hiddenTransform
-        UIView.animateDampenedSpringWithDuration(self.transitionDuration,
-            animation: {
-                a.transform = CGAffineTransformIdentity
-            }, completion: { finished in
+        a.transform = ProgressAnimationController.HiddenTransform
+        UIView.animateDampenedSpringWithDuration(ProgressAnimationController.TransitionDuration,
+            animation: a.transform = CGAffineTransformIdentity) { finished in
                 transitionContext.completeTransition(finished)
-            }
-        )
+        }
     }
     
     func dismissInContext(transitionContext: UIViewControllerContextTransitioning) {
@@ -93,13 +90,10 @@ class ProgressAnimationController: NSObject, UIViewControllerAnimatedTransitioni
             fatalError("Trying to use a ProgressAnimationController with a view controller that is not ProgressController")
         }
         
-        UIView.animateDampenedSpringWithDuration(self.transitionDuration,
-            animation: {
-                vc.activityIndicator.transform = self.hiddenTransform
-            }, completion: { finished in
+        UIView.animateDampenedSpringWithDuration(ProgressAnimationController.TransitionDuration,
+            animation: vc.activityIndicator.transform = ProgressAnimationController.HiddenTransform) { finished in
                 transitionContext.completeTransition(finished)
-            }
-        )
+        }
     }
 }
 
