@@ -44,7 +44,7 @@ public class ProgressController: UIViewController {
     
     public override func preferredStatusBarStyle() -> UIStatusBarStyle {
         // Normally modalPresentationCapturesStatusBarAppearance would be used,
-        // but it doesn't seem to have any affect on custom modal style.
+        // but it doesn't seem to have any effect on custom modal style.
         if let presenting = self.presentingViewController {
             return presenting.preferredStatusBarStyle()
         }

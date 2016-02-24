@@ -23,10 +23,11 @@ class ProgressPresentationController: UIPresentationController {
         self.containerView!.addSubview(self.overlayView)
         self.containerView!.addSubview(self.presentedView()!)
         
-        let coordinator = self.presentedViewController.transitionCoordinator()
-        coordinator?.animateAlongsideTransition({ context in
-            self.overlayView.alpha = 1
-            }, completion: nil)
+        if let coordinator = self.presentedViewController.transitionCoordinator() {
+            coordinator.animateAlongsideTransition({ context in
+                self.overlayView.alpha = 1
+                }, completion: nil)
+        }
     }
     
     override func containerViewDidLayoutSubviews() {
