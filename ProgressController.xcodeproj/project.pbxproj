@@ -12,6 +12,8 @@
 		40943B941C7D1CCC00273092 /* ProgressController.h in Headers */ = {isa = PBXBuildFile; fileRef = 40943B921C7D1CCC00273092 /* ProgressController.h */; };
 		40943B961C7D1E1D00273092 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40943B951C7D1E1D00273092 /* Info.plist */; };
 		40943B981C7D1ECE00273092 /* ProgressControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40943B971C7D1ECE00273092 /* ProgressControllerTests.swift */; };
+		40943BA01C7D3B1D00273092 /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40943B9E1C7D3B1D00273092 /* ProgressController.swift */; };
+		40943BA11C7D3B1D00273092 /* ProgressControllerTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40943B9F1C7D3B1D00273092 /* ProgressControllerTransitioning.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		40943B921C7D1CCC00273092 /* ProgressController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgressController.h; path = Source/ProgressController.h; sourceTree = SOURCE_ROOT; };
 		40943B951C7D1E1D00273092 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = SOURCE_ROOT; };
 		40943B971C7D1ECE00273092 /* ProgressControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressControllerTests.swift; path = Tests/ProgressControllerTests.swift; sourceTree = SOURCE_ROOT; };
+		40943B9E1C7D3B1D00273092 /* ProgressController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
+		40943B9F1C7D3B1D00273092 /* ProgressControllerTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressControllerTransitioning.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 		40943B211C7D1B7900273092 /* ProgressController */ = {
 			isa = PBXGroup;
 			children = (
+				40943B9E1C7D3B1D00273092 /* ProgressController.swift */,
+				40943B9F1C7D3B1D00273092 /* ProgressControllerTransitioning.swift */,
 				40943B911C7D1CCC00273092 /* Info.plist */,
 				40943B921C7D1CCC00273092 /* ProgressController.h */,
 			);
@@ -200,6 +206,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40943BA11C7D3B1D00273092 /* ProgressControllerTransitioning.swift in Sources */,
+				40943BA01C7D3B1D00273092 /* ProgressController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
