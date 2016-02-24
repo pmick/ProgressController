@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  ProgressController
+//  iOS Example
 //
-//  Created by Patrick Mick on 2/22/16.
+//  Created by Patrick Mick on 2/23/16.
 //  Copyright © 2016 YayNext. All rights reserved.
 //
 

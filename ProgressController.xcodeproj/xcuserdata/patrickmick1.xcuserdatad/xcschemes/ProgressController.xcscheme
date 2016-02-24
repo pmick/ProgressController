@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "401C21B81C7C38A40088AD00"
-               BuildableName = "ProgressController.app"
+               BlueprintIdentifier = "40943B1E1C7D1B7900273092"
+               BuildableName = "ProgressController.framework"
                BlueprintName = "ProgressController"
                ReferencedContainer = "container:ProgressController.xcodeproj">
             </BuildableReference>
@@ -28,12 +28,22 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "40943B281C7D1B7900273092"
+               BuildableName = "ProgressControllerTests.xctest"
+               BlueprintName = "ProgressControllerTests"
+               ReferencedContainer = "container:ProgressController.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "401C21B81C7C38A40088AD00"
-            BuildableName = "ProgressController.app"
+            BlueprintIdentifier = "40943B1E1C7D1B7900273092"
+            BuildableName = "ProgressController.framework"
             BlueprintName = "ProgressController"
             ReferencedContainer = "container:ProgressController.xcodeproj">
          </BuildableReference>
@@ -51,16 +61,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "401C21B81C7C38A40088AD00"
-            BuildableName = "ProgressController.app"
+            BlueprintIdentifier = "40943B1E1C7D1B7900273092"
+            BuildableName = "ProgressController.framework"
             BlueprintName = "ProgressController"
             ReferencedContainer = "container:ProgressController.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +79,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "401C21B81C7C38A40088AD00"
-            BuildableName = "ProgressController.app"
+            BlueprintIdentifier = "40943B1E1C7D1B7900273092"
+            BuildableName = "ProgressController.framework"
             BlueprintName = "ProgressController"
             ReferencedContainer = "container:ProgressController.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
