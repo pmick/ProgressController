@@ -20,23 +20,10 @@ class ProgressControllerTests: XCTestCase {
         let progressController = ProgressController()
         XCTAssertEqual(progressController.transitioningDelegate as? ProgressTransitioningDelegate, progressController.progressTransitioningDelegate)
     }
-    
-    class MockPresentingVC: UIViewController {
-        override func preferredStatusBarStyle() -> UIStatusBarStyle {
-            return .LightContent
-        }
-    }
-    
-    class StubbedProgressController: ProgressController {
-        override var presentingViewController: UIViewController {
-            return MockPresentingVC()
-        }
-    }
-    
+
     func testStatusBarStyle_ShouldComeFromPresentingViewController() {
         let sut = StubbedProgressController()
         XCTAssertEqual(sut.preferredStatusBarStyle(), UIStatusBarStyle.LightContent)
     }
-    
     
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		406524DF1C7E6E6B007FE562 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406524DE1C7E6E6B007FE562 /* TestHelpers.swift */; };
 		40943B2A1C7D1B7900273092 /* ProgressController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40943B1F1C7D1B7900273092 /* ProgressController.framework */; };
 		40943B941C7D1CCC00273092 /* ProgressController.h in Headers */ = {isa = PBXBuildFile; fileRef = 40943B921C7D1CCC00273092 /* ProgressController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40943B981C7D1ECE00273092 /* ProgressControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40943B971C7D1ECE00273092 /* ProgressControllerTests.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		406524DE1C7E6E6B007FE562 /* TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 		40943B1F1C7D1B7900273092 /* ProgressController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProgressController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40943B291C7D1B7900273092 /* ProgressControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40943B911C7D1CCC00273092 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = SOURCE_ROOT; };
@@ -89,6 +91,7 @@
 			children = (
 				40943B951C7D1E1D00273092 /* Info.plist */,
 				40943B971C7D1ECE00273092 /* ProgressControllerTests.swift */,
+				406524DE1C7E6E6B007FE562 /* TestHelpers.swift */,
 			);
 			name = ProgressControllerTests;
 			path = Tests;
@@ -204,6 +207,7 @@
 			files = (
 				40943BA11C7D3B1D00273092 /* ProgressControllerTransitioning.swift in Sources */,
 				40943BA01C7D3B1D00273092 /* ProgressController.swift in Sources */,
+				406524DF1C7E6E6B007FE562 /* TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

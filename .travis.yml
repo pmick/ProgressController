@@ -1,1 +1,5 @@
 language: objective-c
+
+script:
+ - xctool test -workspace ProgressController.xcworkspace -scheme ProgressController -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+ - xctool build -workspace ProgressController.xcworkspace -scheme iOS\ Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
