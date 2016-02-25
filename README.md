@@ -1,4 +1,7 @@
 # ProgressController
+
+![Pod Version](https://img.shields.io/cocoapods/v/ProgressController.svg?style=flat) ![Travis Status](https://travis-ci.org/YayNext/ProgressController.svg?branch=master)
+
 A replacement for MBProgressHUD/SVProgressHUD or similar progress views that leverages UIPresentationController rather than inserting views into your window/view hierarchy.
 
 ![ProgressController](https://raw.githubusercontent.com/YayNext/ProgressController/master/preview.gif)
