@@ -5,12 +5,20 @@ A replacement for MBProgressHUD/SVProgressHUD or similar progress views that lev
 
 ## Installation
 
+### CocoaPods
+```
+pod 'NXTSegmentedControl'
+```
+
+### Swift Project Manager
+
+
 ## Usage
 
 ```swift
 let progressController = ProgressController()
 self.presentViewController(progressController, animated: true, completion: nil)
- 
+
 api.requestData() {
     self.dismissViewControllerAnimated(true, completion: nil)
 }
@@ -19,4 +27,3 @@ api.requestData() {
 ## Todo
 - [ ] Optional Title View
 - [ ] A percent driven style that allows you to display a circular progress view
-
