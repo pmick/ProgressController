@@ -12,13 +12,13 @@ import XCTest
 class ProgressControllerTests: XCTestCase {
 
     func testProgressModalPresentationStyle_ShouldBeCustom() {
-        let progressController = ProgressController()
-        XCTAssertEqual(progressController.modalPresentationStyle, UIModalPresentationStyle.Custom)
+        let sut = ProgressController()
+        XCTAssertEqual(sut.modalPresentationStyle, UIModalPresentationStyle.Custom)
     }
    
     func testProgressController_ShouldHaveAValidTransitioningDelegate() {
-        let progressController = ProgressController()
-        XCTAssertEqual(progressController.transitioningDelegate as? ProgressTransitioningDelegate, progressController.progressTransitioningDelegate)
+        let sut = ProgressController()
+        XCTAssertEqual(sut.transitioningDelegate as? ProgressTransitioningDelegate, sut.progressTransitioningDelegate)
     }
 
     func testStatusBarStyle_ShouldComeFromPresentingViewController() {
