@@ -7,7 +7,7 @@ A replacement for MBProgressHUD/SVProgressHUD or similar progress views that lev
 
 ### CocoaPods
 ```
-pod 'NXTSegmentedControl'
+pod 'ProgressController'
 ```
 
 ### Swift Project Manager
