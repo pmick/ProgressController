@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "ProgressController"
   s.version          = "1.0.0"
-  s.summary          = "A replacement for MBProgressHUD/SVProgressHUD or similar progress views that leverages UIPresentationController rather than inserting views into your window/view hierarchy."
+  s.summary          = "A progress view that leverages UIPresentationController rather than inserting views into your window/view hierarchy."
   s.homepage         = "https://github.com/YayNext/ProgressController"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
