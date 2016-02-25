@@ -10,9 +10,6 @@ A replacement for MBProgressHUD/SVProgressHUD or similar progress views that lev
 pod 'ProgressController'
 ```
 
-### Swift Package Manager
-
-
 ## Usage
 
 ```swift
